@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 80vh;
+  background: rgb(231, 212, 208);
+background: radial-gradient(circle, rgba(235, 221, 218, 0.944) 1%, rgba(175, 175, 184, 0.978) 100%);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+
+position: relative;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#alien-face {
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+  margin-top: 55px;
+  background-color:#cfc9c9;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  transform: rotate(45deg);
+  border-top-left-radius: 300px; /*  top     */
+  border-top-right-radius: 300px; /*  right   */
+  border-bottom-right-radius: 60px; /*  bottom  */
+  border-bottom-left-radius: 300px; /*  left    */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 12px 12px 16px 0 rgba(153, 145, 145, 0.3) inset,
+    -8px -8px 12px 0 rgba(105, 103, 103, 0.25) inset;
+}
+#leftEye,
+#rightEye {
+  width: 150px;
+  height: 170px;
+  border: none;
+  background-color: rgb(253, 253, 253);
+ 
+  box-shadow:  0 1px 55px 10px rgb(211, 211, 213) ,
+  inset 0 1px 55px 10px rgb(214, 214, 214);
+  position: absolute;
+ 
+}
+#rightEye {
+  transform: rotate(40deg);
+  border-top-left-radius: 0; /*  right     */
+  border-top-right-radius: 200px; /*  bottom   */
+  border-bottom-right-radius: 0; /*  left  */
+  border-bottom-left-radius: 200px; /*  top    */
+
+  margin-top: 70px; /*  top-right       */
+  margin-right: 0; /*  bottom-right    */
+  margin-bottom: 100px; /*  bottom-left     */
+  margin-left: 250px; /*  top-left        */
+}
+#leftEye {
+  transform: rotate(50deg);
+  border-top-left-radius: 200px; /*  right     */
+  border-top-right-radius: 0; /*  bottom   */
+  border-bottom-right-radius: 200px; /*  left  */
+  border-bottom-left-radius: 0; /*  top    */
+  margin-top: 250px; /*  top-right       */
+  margin-right: 100px; /*  bottom-right    */
+  margin-bottom: 0; /*  bottom-left     */
+  margin-left: 70px; /*  top-left        */
+}
